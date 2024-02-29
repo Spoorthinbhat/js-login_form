@@ -11,37 +11,55 @@
 <body>
     <div class="container">
         <form>
-            create account
-            <br>
+            <h2>Create Account</h2>
             <br>
             Username:
-            <br>
-            <input type="text" id="name">
+            <div class="card">
+                <img src="icons8-person-30.png">
+                <input type="text" id="name">
+                <i id="namec"></i>
+            </div>
             <br>
             Email:
             <br>
-            <input type="email" id="email">
+            <div class="card">
+                <img src="icons8-email-24.png">
+                <input type="email" id="email">
+                <i id="emailc"></i>
+            </div>
             <br>
             Phone No.:
             <br>
-            <input type="tel" id="phone">
+            <div class="card">
+                <img src="icons8-phone-26.png">
+                <input type="tel" id="phone">
+                <i id="phonec"></i>
+            </div>
             <br>
             Passsword:
             <br>
-            <input type="password" id="pass">
+            <div class="card">
+                <img src="icons8-password-30.png">
+                <input type="password" id="pass">
+                <i id="passwordc"></i>
+            </div>
             <br>
             Password check:
             <br>
-            <input type="password" id="cpass">
-            <br>
+            <div class="card">
+                <img src="icons8-password-30.png">
+                <input type="password" id="cpass">
+                <i id="passwordcc"></i>
+            </div>
             <br>
             <button id="submit" onclick="sub_mit()">Submit</button>
             <input type="reset" id="reset" onclick="reset()">
-            <script src=" validation.js">
-            </script>
+
 
         </form>
     </div>
+    <script src=" validation.js">
+    </script>
 </body>
 
 </html>

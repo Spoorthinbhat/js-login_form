@@ -38,6 +38,7 @@ function validate_name(u_name) {
     document.getElementById("name").style.borderColor = "green";
     fn = true;
   }
+  tick("namec", fn);
 }
 function validate_ph(phone_no) {
   console.log(phone_no);
@@ -48,6 +49,7 @@ function validate_ph(phone_no) {
     phone.style.borderColor = "green";
     fp = true;
   }
+  tick("phonec", fp);
 }
 function validate_pass(password) {
   let flag_n = false;
@@ -76,6 +78,7 @@ function validate_pass(password) {
       }
     }
   }
+  tick("passwordc", fpw);
 }
 function validate_check(check) {
   if (pass.value === check && check != "") {
@@ -85,6 +88,7 @@ function validate_check(check) {
     cpass.style.borderColor = "red";
     fpc = false;
   }
+  tick("passwordcc", fpc);
 }
 function validate_email(mail) {
   console.log(mail);
@@ -95,6 +99,7 @@ function validate_email(mail) {
     email.style.borderColor = "red";
     fe = false;
   }
+  tick("emailc", fe);
 }
 function reset() {
   uname.value = "";
@@ -109,5 +114,13 @@ function sub_mit() {
     alert("Submitted");
   } else {
     alert("Not submitted");
+  }
+}
+function tick(place, flag) {
+  if (flag) {
+    document.getElementById(place).innerHTML = "<img src='icons8-done-24.png'>";
+  } else {
+    document.getElementById(place).innerHTML =
+      "<img src='icons8-wrong-48.png'>";
   }
 }

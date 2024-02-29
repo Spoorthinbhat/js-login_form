@@ -37,6 +37,7 @@
 .container {
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
   align-items: center;
   align-content: center;
   height: 100vh;
@@ -44,4 +45,24 @@
   margin: 0px;
   font-family: cursive;
   font-size: 1.7em;
+}
+input {
+  width: 100%;
+}
+input[type="reset"] {
+  width: 35%;
+}
+#submit {
+  width: 35%;
+}
+.card {
+  display: flex;
+}
+img {
+  margin-right: 10px;
+}
+.out {
+  width: 50%;
+  border: 2px solid black;
+  margin: auto;
 }
