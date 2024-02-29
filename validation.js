@@ -116,11 +116,20 @@ function sub_mit() {
     alert("Not submitted");
   }
 }
+// function tick(place, flag) {
+//   if (flag) {
+//     document.getElementById(place).innerHTML = "<img src='icons8-done-24.png'>";
+//   } else {
+//     document.getElementById(place).innerHTML =
+//       "<img src='icons8-wrong-48.png' class='wrong'>";
+//   }
+// }
 function tick(place, flag) {
   if (flag) {
-    document.getElementById(place).innerHTML = "<img src='icons8-done-24.png'>";
+    document.getElementById(place).innerHTML =
+      "<img src='icons8-done-24.png' class='right'>";
   } else {
     document.getElementById(place).innerHTML =
-      "<img src='icons8-wrong-48.png'>";
+      "<img src='icons8-wrong-48.png' class='wrong'>";
   }
 }

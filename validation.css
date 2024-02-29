@@ -6,11 +6,18 @@
   outline: none;
   border-width: 2px;
 }
+body {
+  background-color: #310e68;
+  background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%);
+}
+h2 {
+  margin: 0px;
+}
 #submit:hover {
-  background-color: #2ee59d;
+  background-color: #064721;
   box-shadow: 0px 15px 20px rgba(80, 196, 86, 0.4);
   color: aliceblue;
-  /* transform: translateY(-7px); */
+  border: 3px solid black;
   scale: 1.3;
   transition-duration: 0.05s;
   text-transform: uppercase;
@@ -20,43 +27,35 @@
   box-shadow: 0px 15px 20px rgba(166, 75, 44, 0.4);
   color: aliceblue;
   scale: 1.3;
-
-  /* transform: translateY(-7px); */
+  border: 3px solid black;
   transition-duration: 0.05s;
   text-transform: uppercase;
 }
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100vh;
-  width: 100vw;
-  margin: 0px;
-} */
 .container {
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
   align-items: center;
   align-content: center;
-  height: 100vh;
-  width: 100vw;
   margin: 0px;
   font-family: cursive;
   font-size: 1.7em;
+  padding: 3em;
 }
 input {
-  width: 100%;
+  width: 25em;
+  height: 2.4em;
 }
-input[type="reset"] {
-  width: 35%;
-}
+#reset,
 #submit {
+  margin-right: 5px;
   width: 35%;
+  justify-content: center;
+  background-color: #a594f9;
+  border: 2px solid rgb(197, 148, 249);
 }
 .card {
   display: flex;
+  margin-bottom: 0.8em;
 }
 img {
   margin-right: 10px;
@@ -65,4 +64,36 @@ img {
   width: 50%;
   border: 2px solid black;
   margin: auto;
+}
+.wrong {
+  height: 1em;
+}
+.right {
+  height: 1em;
+}
+.icon {
+  width: 1em;
+}
+.sub {
+  display: flex;
+  justify-content: center;
+}
+br {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  line-height: 0.8;
+}
+.heading {
+  margin-bottom: 1.3em;
+  text-align: center;
+}
+.outer {
+  margin: auto;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  background-color: white;
 }
